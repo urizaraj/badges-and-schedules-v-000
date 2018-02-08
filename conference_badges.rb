@@ -24,6 +24,7 @@ def printer(array)
   rooms = assign_rooms(array)
 
   badges.each_with_index do |badge, i|
-    puts badge + rooms[i]
+    puts badge
+    puts rooms[i]
   end
 end
