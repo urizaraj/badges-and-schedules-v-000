@@ -3,8 +3,16 @@ def badge_maker(name)
 end
 
 def batch_badge_creator(array)
-  array.map! do |name|
+  result = array.map do |name|
     badge_maker(name)
   end
-  array
+  result
 end
+
+def assign_rooms(array)
+  result = []
+  array.each_with_index do |name, i|
+    result.push(
+    "Hello, #{name}! You'll be assigned to room #{i + 1}!"
+    )
+    
